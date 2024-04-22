@@ -23,7 +23,7 @@ SELECT DISTINCT price FROM products;
 
 -- find all employees whose first name starts with the letter ‘j’
 SELECT * FROM employees
-WHERE firstname LIKE 'j&';
+WHERE firstname LIKE 'j%';
 
 -- find all Macbooks
 SELECT * FROM products
