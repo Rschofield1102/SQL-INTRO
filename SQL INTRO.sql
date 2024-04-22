@@ -34,14 +34,14 @@ SELECT * FROM PRODUCTS
 WHERE onsale = 1;
 
 -- find the average price of all products
-SELECT AVG price FROM products;
+SELECT AVG(price) FROM products;
 
 -- find all Geek Squad employees who don't have a middle initial
 SELECT * FROM employees
-WHERE title LIKE '%Geek Squad%' AND middleinital IS null;
+WHERE Title LIKE '%Geek Squad%' AND MiddleInital IS null;
 
 -- find all products from the products table whose stock level is in the range -- of 500 to 1200. 
 -- Order by Price from least to greatest
 SELECT * FROM products
-WHERE stocklevel BETWEEN 500 AND 1200
+WHERE StockLevel BETWEEN 500 AND 1200
 ORDER BY price asc;
